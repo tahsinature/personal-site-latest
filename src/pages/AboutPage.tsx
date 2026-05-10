@@ -10,6 +10,7 @@ import { languagesByLabel } from "@/data/language-phrases";
 import BentoCard from "@/components/about/BentoCard";
 import CatIllustration from "@/components/about/CatIllustration";
 import DogIllustration from "@/components/about/DogIllustration";
+import PetPolaroids from "@/components/about/PetPolaroids";
 import BookshelfIllustration from "@/components/about/BookshelfIllustration";
 import WorkspaceIllustration from "@/components/about/WorkspaceIllustration";
 import LanguagesIllustration from "@/components/about/LanguagesIllustration";
@@ -215,9 +216,12 @@ export default function AboutPage() {
                 <DogIllustration className="w-14 h-14" />
               </div>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                I love cats and dogs. I have a cat at home named <span className="text-primary font-semibold">Tommy</span> 🐱
+                I love cats and dogs. I have a cat at home named <span className="text-primary font-semibold">Tommy</span> 🐱 — he stays with my sister most of the time, they're best friends.
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed">He stays with my sister most of the time — they're best friends.</p>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                <span className="text-primary font-semibold">Mini</span> was also part of our family — a sweet little soul we'll always remember. 🐾
+              </p>
+              <PetPolaroids />
             </BentoCard>
           </StaggerItem>
 
