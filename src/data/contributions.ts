@@ -81,6 +81,19 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: "roomflix",
+    title: "Roomflix – Synced video playback for any public URL",
+    description:
+      "A web app that lets a group watch the same video together in sync. Create a room, share the link, paste any public video URL — play/pause/seek/mute mirror to everyone in real time.",
+    writeup:
+      "Built with a Bun-native WebSocket server and React/Vite frontend in one repo. The server holds canonical per-room state and clients send intent messages; late joiners extrapolate playback time forward using server clock skew. No auth or DB — rooms live in memory and are swept after idle.",
+    liveUrl: "https://roomflix.tahsin.us",
+    repoUrl: "https://github.com/tahsinature/roomflix",
+    techStack: ["TypeScript", "Bun", "React", "Vite", "Tailwind CSS", "WebSocket"],
+    tag: "open-source",
+    period: "2026 – Present",
+  },
+  {
     id: "muslim-tools",
     title: "Muslim Tools: iOS, Android, and Web Utility App",
     description: "A cross-platform app providing prayer times, Qibla direction, and Islamic calendar features. Built with React Native and deployed on both app stores and the web.",
